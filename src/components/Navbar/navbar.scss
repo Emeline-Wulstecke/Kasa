@@ -3,25 +3,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 45px;
-    padding-bottom:50px;
-
-    img { 
-        width: 210px; 
-        height: 68px 
-    }
+    padding-bottom: 0px;
  
     a { 
         font-size: 24px; 
-        color: #FF6060; 
+        color: #FF6060;
         text-decoration: none; 
-        &:hover { 
-            text-decoration: underline; 
+          
         }
+    .nav-active {
+        text-decoration: underline;
+        color: #FF6060;
     }
 
     ul { 
-        display: flex; 
-        gap: 57px; 
-        list-style: none; 
+        display: flex;
+        gap: 50px; 
     }
 }

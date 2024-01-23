@@ -8,7 +8,7 @@ const Navbar = () => {
       <img src={logo} alt="Logo de Kasa écrit en rouge avec une maison à la place du premier A" className="logo" />
       <ul>
         <li>
-          <Link to="/">Accueil</Link>
+          <Link to="/" className="nav-active">Accueil</Link>
         </li>
         <li>
           <Link to="/About"> A Propos</Link>

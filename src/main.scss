@@ -1,5 +1,19 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
 body {
-  margin: 0; 
-  max-width: 1440px;
+  font-family: "Montserrat", sans-serif;
   color: white;
-} 
+  font-size: 18px;
+}

@@ -2,13 +2,23 @@ import React from 'react'
 import './about.scss';
 import Banner from '../../components/Banner/Banner';
 import imgbanner from '../../assets/images/banner2.png';
+import CollapseList from '../../components/Collapse/Collapse';
 
 const About = () => {
+
+    const collapses = [
+        { title: "Fiabilité", content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." },
+        { title: "Respect", content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraîneraune exclusion de notre plateforme." },
+        { title: "Service", content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraîneraune exclusion de notre plateforme." },
+        { title: "Responsabilite", content: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standarts sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." },
+      ];
+      
     return (
         <main>
             < Banner 
             img={imgbanner}
             alt="Une image vue sur les sapins et les montagnes"/>
+            <CollapseList items={collapses} />
             
         </main>
     )

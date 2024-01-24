@@ -2,22 +2,48 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px;
+    padding: 45px 70px;
     padding-bottom: 0px;
- 
-    a { 
-        font-size: 24px; 
+
+    a {
+        font-size: 24px;
         color: #FF6060;
-        text-decoration: none; 
-          
+        text-decoration: none;
         }
+
     .nav-active {
         text-decoration: underline;
         color: #FF6060;
     }
 
-    ul { 
+    ul {
         display: flex;
-        gap: 50px; 
+        gap: 50px;
     }
 }
+
+/************** Responsive mobile*************/
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+    nav {
+      display: flex;
+      width: 335px;
+      padding: 20px;
+      padding-bottom: 0px;
+      box-sizing: content-box;
+    }
+  
+    nav a {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  
+    .logo {
+      width: 145px;
+    }
+  
+    nav ul {
+      display: flex;
+      gap: 27px;
+    }
+  }

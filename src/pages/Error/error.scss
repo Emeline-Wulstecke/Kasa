@@ -19,7 +19,42 @@
     }
 
     .link-error {
-        color: #FF6060;
+        color: black;
         text-decoration: underline;
+    }
+}
+
+/************** Responsive tablette *************/
+
+@media screen and (max-width: 768px) {
+    .text-error{
+        text-align: center;
+    }
+}
+
+/************** Responsive mobile*************/
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+    .main-error { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        gap: 113px;
+
+        h1 {
+            font-size: 96px;
+        }
+
+        .text-error {
+            font-size: 18px;
+            color: #FF6060;
+            text-align: center;
+        }
+
+        .link-error {
+            color: black;
+            text-decoration: underline;
+        }
     }
 }

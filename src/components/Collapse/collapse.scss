@@ -71,15 +71,39 @@
     }
 }
 
-/************** Responsive mobile*************/
+/************** Responsive mobile *************/
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
-
     .collapse {
         padding: 20px;
 
         .collapse-list {
             width: 100%;
+            gap:20px
+        }
+        
+        .collapse-item {
+            padding: 10px 0px 10px 10px;
+            width: 335px;
+            height: 40px;
+
+            h2 {
+                font-size: 13px;
+                font-weight: 700;
+            }
+
+            .icon-collapse {
+                position: absolute;
+                top: 5px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .collapse-text {
+            font-size: 13px;
+            text-align : justify;
+            bottom: 23px;
         }
     }
 }

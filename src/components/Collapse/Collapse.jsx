@@ -14,13 +14,15 @@ const CollapseItem = ({ title, content }) => {
   };
 
   return (
+    <>
     <li className="collapse-item" onClick={handleToggle}>
       <h2>{title}</h2>
       <img src={iconCollapse} alt="fleche" className={`icon-collapse ${iconClass}`} />
-      <Collapse isOpened={isOpen}>
-        <p className={textAnim}>{content}</p>
-      </Collapse>
     </li>
+    <Collapse isOpened={isOpen}>
+      <p className= 'collapse-text' id={textAnim}>{content}</p>
+    </Collapse>
+  </>
   );
 };
 

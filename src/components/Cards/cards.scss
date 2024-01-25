@@ -9,10 +9,13 @@
     background-color: #F6F6F6;
     border-radius: 25px;
 
+    .cards-link {
+        width: calc(33.33% - 50px);
+    }
     .cards {
         position: relative;
         display: flex;
-        width: calc(33.33% - 50px);
+        width: 100%;
 
         &::before {
             content: "";
@@ -33,6 +36,7 @@
     }
 
     .cards-txt {
+        color: white;
         position: absolute;
         left: 10px;
         bottom: 10px;
@@ -42,8 +46,11 @@
 /************** Responsive tablette *************/
 
 @media screen and (max-width: 768px) {
-    .cards-container .cards {
-        width: 90%;
+    .cards-container {
+    
+    .cards-link {
+            width: calc(100% - 50px);
+        }
     }
 }
 
@@ -58,7 +65,7 @@
         gap: 20px;
         background-color: white;
 
-        .cards {
+        .cards-link {
             width: 100%;
         }
     }

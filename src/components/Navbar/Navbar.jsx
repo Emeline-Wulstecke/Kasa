@@ -7,12 +7,16 @@ const Navbar = () => {
     <nav>
       <img src={logo} alt="Logo de Kasa écrit en rouge avec une maison à la place du premier A" className="logo" />
       <ul>
+        <li>
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li>Accueil</li>
+         Accueil
         </NavLink>
+        </li>
+        <li>
         <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li>A Propos</li>
+          A Propos
         </NavLink>
+        </li>
       </ul>
     </nav>
   );

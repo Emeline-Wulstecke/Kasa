@@ -15,7 +15,7 @@ const CollapseItem = ({ title, content }) => {
 
   return (
     <>
-    <li className="collapse-item" onClick={handleToggle}>
+    <li className="collapse-item " onClick={handleToggle}>
       <h2>{title}</h2>
       <img src={iconCollapse} alt="fleche" className={`icon-collapse ${iconClass}`} />
     </li>
@@ -28,8 +28,8 @@ const CollapseItem = ({ title, content }) => {
 
 const CollapseList = ({ items }) => {
   return (
-    <article className='collapse'>
-      <ul className='collapse-list'>
+    <article className='collapse' id='collapse-rental'>
+      <ul className='collapse-list' id='collapse-list-rental'>
         {items.map((item, index) => (
           <CollapseItem key={index} title={item.title} content={item.content} />
         ))}

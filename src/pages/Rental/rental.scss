@@ -1,6 +1,76 @@
 .main-rental {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     width: 100%;
+
+    .header-rental {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 70px 25px;
+
+        .rental-info {
+            display: flex;
+            flex-direction: column;
+
+            .rental-title {
+                display: flex;
+                font-size: 36px;
+                color: #FF6060;
+            }
+
+            .rental-location {
+                padding: 5px;
+                color: black;
+
+            }
+        }
+
+        .host-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+
+            .host {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .host-img {
+                    display: block;
+                    align-self: flex-end;
+                    border-radius: 50%;
+                    width: 64px;
+                    height: 64px;
+                }
+
+                .host-name {
+                    color: #FF6060;
+                    text-align: right;
+                    width: 90px;
+                }
+            }
+
+            .rating {
+                width: 196px;
+                height: 36px;
+            }
+
+            .rating-stars {
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+            }
+
+            .star {
+                color: gray;
+            }
+
+            .filled {
+                color: #FF6060;
+            }
+        }
+    }
 }

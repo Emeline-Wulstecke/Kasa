@@ -7,9 +7,9 @@ const Home = () => {
 	return (
 		<main>
 			<Banner
-				img={imgHome}
-				alt="Une image d'une falaise avec une vue sur une plage"
-				text="Chez vous, partout et ailleurs" />
+				img = {imgHome}
+				alt = "Une image d'une falaise avec une vue sur une plage"
+				text = "Chez vous, partout et ailleurs" />
 			<Cards />
 		</main>
 	)

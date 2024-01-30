@@ -1,0 +1,82 @@
+.carrousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 100%;
+
+    .carrousel-img {
+        width: 90%;
+        height: 415px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .arrow-left {
+        position: absolute;
+        left: 80px;
+    }
+
+    .arrow-right {
+        position: absolute;
+        right: 80px;
+    }
+
+    .carrousel-counter {
+        position: absolute;
+        bottom: 70px;  
+    }
+} 
+
+/************** Responsive tablette *************/
+
+@media screen and (max-width: 768px) {
+    .carrousel {
+
+        .arrow-left {
+            position: absolute;
+            left: 45px;
+            width: 30px;
+            height: 50px; 
+        }
+
+        .arrow-right {
+            position: absolute;
+            right: 45px;
+            width: 30px;
+            height: 50px;       
+        }
+    }
+}
+
+/************** Responsive mobile *************/
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+    .carrousel {
+
+        .carrousel-img {
+            width: 90%;
+            height: 255px;
+        }
+
+        .arrow-left {
+            position: absolute;
+            left: 25px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .arrow-right {
+            position: absolute;
+            right: 25px;
+            width: 24px;
+            height: 24px;       
+        }
+
+        .carrousel-counter {
+           display: none; 
+        }
+    }
+}

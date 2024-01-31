@@ -15,21 +15,21 @@ const CollapseItem = ({ title, content }) => {
 
   return (
     <>
-    <li className="collapse-item " onClick={handleToggle}>
+    <li className = "collapse-item housing-item" onClick={handleToggle}>
       <h2>{title}</h2>
       <img src={iconCollapse} alt="fleche" className={`icon-collapse ${iconClass}`} />
-    </li>
-    <Collapse isOpened={isOpen}>
-      <p className= 'collapse-text' id={textAnim}>{content}</p>
+      <Collapse isOpened={isOpen}>
+      <p className= "collapse-text housing-text" id={textAnim}>{content}</p>
     </Collapse>
+    </li>  
   </>
   );
 };
 
 const CollapseList = ({ items }) => {
   return (
-    <article className='collapse' id='collapse-rental'>
-      <ul className='collapse-list' id='collapse-list-rental'>
+    <article className = "collapse housing-collapse">
+      <ul className = "collapse-list housing-list">
         {items.map((item, index) => (
           <CollapseItem key={index} title={item.title} content={item.content} />
         ))}

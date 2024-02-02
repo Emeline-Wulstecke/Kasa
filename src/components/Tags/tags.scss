@@ -15,3 +15,18 @@
         font-weight: 700;
     }
 }
+
+/************** Responsive mobile *************/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .tags {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        width: 84px;
+
+        .tags-name {
+          font-size: 10px;
+          padding: 4px 15px;
+          white-space: nowrap;
+        }
+    }
+}

@@ -56,10 +56,10 @@ const Rental = () => {
             <figcaption className='rating-stars'>
               {renderStars({ value: rental.rating })}
             </figcaption>
-          </figure>          
+          </figure>
         </section>
       </header>
-      <CollapseList items={collapseItems} />
+      <CollapseList items={collapseItems} housingClass='housing' ulHousingClass='housing-list' />
     </main>
   );
 }

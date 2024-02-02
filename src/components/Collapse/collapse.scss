@@ -2,24 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 45px;
+    padding: 0 70px 50px;
+    width: 100%;
 
     .collapse-list {
         display: flex;
         flex-direction: column;
-        width: 80%;
         gap: 30px;
+        box-sizing: content-box;
+        width: 80%;
     }
-    
+
     .collapse-item {
         position: relative;
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        padding-top: 10px;
-        padding-left: 15px;
-        padding-bottom: 0px;
-        padding-right: 25px;
+        padding: 10px 25px 0 15px;
         width: 100%;
         color: white;
         background: var(--Red, #FF6060);
@@ -52,59 +51,57 @@
                 transform: rotate(0deg);
             }
         }
+
+        .ReactCollapse--content {
+            position: relative;
+            right: 15px;
+            top: 1px;
+            width: 100%;
+            padding: 20px;
+            background-color: #F6F6F6;
+            color: black;
+            box-sizing: content-box;
+            text-align: justify;
+        }
     }
 
-    .collapse-text {
-        position: relative;
-        padding: 20px;
-        border-radius: 0 0 5px 5px;
-        bottom: 34px;
-        width: 100%;
-        color: black;
-        background: #F6F6F6;
-    }
-} 
+}
+
 /************** Responsive tablette *************/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px)and (max-width: 1024px) {
     .collapse {
-        padding: 35px;
+
+        .collapse-list {
+            width: 100%;
+        }
     }
 }
 
 /************** Responsive mobile *************/
 
-@media screen and (min-width: 375px) and (max-width: 576px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
     .collapse {
         padding: 20px;
 
         .collapse-list {
             width: 100%;
-            gap:20px
         }
-        
-        .collapse-item {
-            padding: 10px 0px 10px 10px;
-            width: 335px;
-            height: 40px;
 
+        .collapse-item {
             h2 {
                 font-size: 13px;
                 font-weight: 700;
             }
 
             .icon-collapse {
-                position: absolute;
-                top: 5px;
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
             }
-        }
 
-        .collapse-text {
-            font-size: 13px;
-            text-align : justify;
-            bottom: 23px;
+            .ReactCollapse--content {
+                font-size: 13px;
+            }
         }
     }
 }

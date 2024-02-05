@@ -27,10 +27,8 @@ nav {
 @media (max-width: 768px) {
     nav {
       display: flex;
-      width: 335px;
       padding: 20px;
       padding-bottom: 0px;
-      box-sizing: content-box;
     }
   
     nav a {

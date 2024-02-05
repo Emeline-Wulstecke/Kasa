@@ -24,7 +24,7 @@ nav {
 
 /************** Responsive mobile*************/
 
-@media screen and (min-width: 375px) and (max-width: 576px) {
+@media (max-width: 768px) {
     nav {
       display: flex;
       width: 335px;

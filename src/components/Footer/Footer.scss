@@ -15,7 +15,7 @@ footer {
 
 /************** Responsive mobile*************/
 
-@media screen and (min-width: 375px) and (max-width: 576px) {
+@media (max-width: 768px) {
     footer {
         gap: 15px;
         padding: 66px 120.313px 58px 121.094px;

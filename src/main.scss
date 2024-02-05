@@ -7,13 +7,29 @@
   text-decoration: none;
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 18px;
+  font-size: 1.1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }

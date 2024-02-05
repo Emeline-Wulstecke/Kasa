@@ -19,7 +19,11 @@ const Carrousel = ({ data }) => {
   const imgCounter = data.pictures.length;
 
   if (imgCounter === 1) {
-    return <img src={currentImgUrl} alt={data.title} />;
+    return (
+      <figure className="carrousel">
+        <img src={currentImgUrl} alt={data.title} className="carrousel-img" />
+      </figure>
+    );
   }
 
   const displayCounter = `${currentIndex + 1}/${imgCounter}`;

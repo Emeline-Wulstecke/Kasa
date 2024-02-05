@@ -84,7 +84,8 @@
     .housing-list {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        align-items: flex-start;
+        gap: 76px;
         box-sizing: content-box;
         width: 100%;
     }
@@ -153,7 +154,7 @@
         .housing-list {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 20px;         
         }
     
     }

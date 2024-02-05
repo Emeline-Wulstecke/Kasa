@@ -1,6 +1,6 @@
 import './rental.scss';
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/Carrousel';
 import data from '../../data/data.json'
 import Tags from '../../components/Tags/Tags';
@@ -15,13 +15,19 @@ import CollapseList from '../../components/Collapse/Collapse';
 const Rental = () => {
   const { id } = useParams();
   const rental = data.find((rental) => rental.id === id);
+  const navigate = useNavigate();
 
-  /**
-   * Renders stars based on the given value.
-   *
-   * @param {object} value - The value used to determine the number of filled stars
-   * @return {array} An array of JSX elements representing the stars
-   */
+  useEffect(() => {
+    if (!rental) {
+      navigate("/error");
+    }
+  }, [id, rental, navigate]);
+    
+    if (!rental) {
+      return null; 
+    }
+    
+
   const renderStars = ({ value }) => {
     const totalStars = 5;
     const stars = Array.from({ length: totalStars }, (_, index) => {

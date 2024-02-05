@@ -6,8 +6,7 @@ import iconCollapse from '../../assets/images/arrowcollapse.png';
 const CollapseItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const iconClass = isOpen ? 'rotate' : 'reverse';
-  const textAnim = isOpen ? 'open' : 'closed';
+  const iconClass = isOpen ? 'rotate' : 'reverse'; 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };

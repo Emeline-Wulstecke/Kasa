@@ -27,11 +27,15 @@
         object-fit: cover;
     }
 
-    figcaption {
+    .banner-txt {
         position: absolute;
         font-family: 'Montserrat', sans-serif;
         font-size: 48px;
 
+    }
+    
+    .text-about {
+        display: none;
     }
 }
 
@@ -55,8 +59,12 @@
             height: 111px;
         }
 
-        figcaption {
+        .banner-txt {
             font-size: 24px;
+                span {
+                    font-size: 24px;
+                    display: block;
+                }
         }
     }
 }

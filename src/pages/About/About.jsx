@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     <main>
-      < Banner
+      < Banner txtAbout="text-about"
         img={imgbanner}
         alt="Une image vue sur les sapins et les montagnes" />
       <CollapseList items={collapses} />

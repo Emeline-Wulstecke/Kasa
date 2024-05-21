@@ -12,9 +12,9 @@ const CollapseItem = ({ title, content }) => {
   };
 
   return (
-    <li className="collapse-item" onClick={handleToggle}>
+    <li className="collapse-item">
       <h2>{title}</h2>
-      <img src={iconCollapse} alt="fleche" className={`icon-collapse ${iconClass}`} />
+      <img src={iconCollapse} alt="fleche" className={`icon-collapse ${iconClass}`} onClick={handleToggle} />
       <Collapse isOpened={isOpen} className='collapse-text'>
       {title === 'Équipements' ? (
           <ul>

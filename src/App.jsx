@@ -9,7 +9,7 @@ import Error from './pages/Error/Error';
 
 function App () {
   return (
-    <BrowserRouter basename='/kasa'>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
